@@ -209,19 +209,3 @@ def show(List):
 
 def flatten(t):
     return [item for sublist in t for item in sublist]
-
-
-S = SimpleSchedule()
-S.add_interval(1, 2)
-S.add_interval(2, 3)
-S.add_interval(1, 4)
-
-I1 = SimpleInterval(1, 2)
-I2 = SimpleInterval(2, 3)
-I3 = SimpleInterval(1, 3)
-I4 = SimpleInterval(4, 5)
-I5 = SimpleInterval(4, 5)
-
-cut1 = I1.cut_interval(I2)
-cut2 = I4.cut_interval(I5)
-cut3 = I2.cut_interval(I5)
